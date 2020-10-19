@@ -1,3 +1,14 @@
-body {
-    background: linear-gradient(to bottom, black 0%,black 50%,#000000 50%,white 50%,white 100%);
+#container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    background-color: white;
+}
+
+.right {
+    width: 50vw;
+    background-color: #9CADCE;
 }
