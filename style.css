@@ -1,14 +1,24 @@
 #container {
-    min-height: 100vh;
+    min-height: 1000vh;
     display: flex;
 }
 
 .left {
-    width: 50vw;
-    background-color: white;
+    width: 50%
+    /* text-align: center; */
 }
 
 .right {
-    width: 50vw;
-    background-color: #9CADCE;
+    width: 50%;
+    color: white;
+    text-align:center;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, white 50%, #9CADCE 0%);
+    
+    height:100vh;
+    /* text-align:center; */
+    color:#9CADCE;
 }
