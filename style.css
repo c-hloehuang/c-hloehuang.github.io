@@ -57,6 +57,7 @@ html, body {
     color: black;
     font-family: 'Space Grotesk';
     font-size: 3vh;
+    cursor: none;
 }
 
 .menu-items {
@@ -160,5 +161,6 @@ html, body {
         align-items: center;
         text-align: center;
         padding-left:0;
+        
     }
 }
