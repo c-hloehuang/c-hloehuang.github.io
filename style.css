@@ -1,10 +1,11 @@
 
 
-body {
+html, body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin:0.75em;
     padding: 0;
+    cursor: none;
 }
 
 .pg1 {
@@ -18,8 +19,23 @@ body {
     background-repeat: no-repeat;
     text-align: center
 }
+.cursor {
+    position: fixed; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    transition: 0s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
 
-#main-text {
+.main-text:hover ~ .cursor {
+    transform: scale(6);
+}
+
+.main-text {
     font-family: "Almarai";
     color: white;
     font-size: 10em;
@@ -82,7 +98,6 @@ body {
     top: 1.5rem;
     width: 3rem;
     height: 3rem;
-    cursor: pointer;
     z-index: 1;
 }
 
@@ -135,8 +150,7 @@ body {
 
 
 @media (max-width: 767px) {
-
-    #main-text {
+    .main-text {
         font-size: 5em;
     }
 
@@ -147,6 +161,4 @@ body {
         text-align: center;
         padding-left:0;
     }
-
-
 }
