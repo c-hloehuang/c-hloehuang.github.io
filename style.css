@@ -152,7 +152,7 @@ body {
     background: black;
 }
 
-.about {
+#about-text {
     font-family: "Almarai";
     color: rgb(145, 145, 145);
     font-size: 5rem;
@@ -197,7 +197,7 @@ body {
         
     }
     
-    .about {
+    #about-text {
         font-size: 2rem;
     }
 }
