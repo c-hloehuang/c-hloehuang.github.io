@@ -1,6 +1,4 @@
-
-
-html, body {
+body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin:0.75em;
@@ -19,21 +17,7 @@ html, body {
     background-repeat: no-repeat;
     text-align: center
 }
-.cursor {
-    position: fixed; 
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: white;
-    transition: 0s;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
 
-#main-text:hover ~ .cursor {
-    transform: scale(6);
-}
 
 #main-text {
     font-family: "Almarai";
@@ -127,6 +111,7 @@ html, body {
 .menu-btn:hover .menu-btn__lines::before{width: 2rem} 
 .menu-btn:hover .menu-btn__lines::after{width: 2rem}  
 
+
 .menu-btn.open .menu-btn__lines {
     transform: translateX(2rem);
     background-color: transparent;
@@ -149,8 +134,33 @@ html, body {
     align-items: left;
 }
 
+.menu-btn.open ~.cursor {
+    background: black;
+}
+
+@media (min-width: 767px) {
+    .cursor {
+        position: fixed; 
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: white;
+        transition: 0s;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+    } 
+
+    #main-text:hover ~ .cursor {
+        transform: scale(6);  
+    } 
+}
 
 @media (max-width: 767px) {
+    body {
+        cursor: pointer;
+    }
+
     #main-text {
         font-size: 5em;
     }
