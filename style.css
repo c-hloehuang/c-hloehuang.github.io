@@ -31,11 +31,11 @@ html, body {
     mix-blend-mode: difference;
 }
 
-.main-text:hover ~ .cursor {
+#main-text:hover ~ .cursor {
     transform: scale(6);
 }
 
-.main-text {
+#main-text {
     font-family: "Almarai";
     color: white;
     font-size: 10em;
@@ -151,7 +151,7 @@ html, body {
 
 
 @media (max-width: 767px) {
-    .main-text {
+    #main-text {
         font-size: 5em;
     }
 
