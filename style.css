@@ -189,7 +189,7 @@ body {
 
 .image-container {
     padding-bottom: 200%;
-    /* background: black; */
+
     overflow: hidden;
     position: relative;
     background-image: url("me.jpg");
