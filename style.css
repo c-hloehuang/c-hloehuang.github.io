@@ -31,10 +31,7 @@ body {
     cursor: none;
 }
 
-.wrapper {
-    overflow: hidden;
-    position: relative;
-}
+
 
 ::-webkit-scrollbar {
     width: 9px;
@@ -259,6 +256,11 @@ body {
 @media (max-width: 767px) {
     * {
         cursor: auto;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        position: relative;
     }
 
     .menu-items li a, .menu-btn {
