@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0
 }
 
 @font-face {
@@ -22,12 +22,17 @@
 }
 
 
+
 body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin:0;
     padding: 0;
     cursor: none;
+}
+
+.wrapper {
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -175,6 +180,7 @@ body {
     background: black;
 }
 
+
 .container {
     max-width: 600px;
     margin: 50px;
@@ -183,6 +189,7 @@ body {
     /* padding: 50px 0; */
     position: relative;
     background-color: black;
+    
 }
      
 
@@ -212,6 +219,8 @@ body {
     left: -150%;
     /* transform: translateY(10%); */
     white-space: nowrap;
+ 
+
 
 } 
 
@@ -224,6 +233,7 @@ body {
 .text span {
     position: fixed;
     display: block;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
