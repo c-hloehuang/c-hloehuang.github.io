@@ -37,6 +37,7 @@ const scrollProgress = () => {
 const raf = () => {
     if(atScroll) {
         parallaxTitle.forEach((element, index) => {
+
             element.style.transform = "translateX(" + window.scrollY / 8 + "%)";
         });
         atScroll = false;
