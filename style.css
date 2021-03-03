@@ -21,6 +21,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Neutro';
+    src: url('NeutroBold.eot');
+    src: url('NeutroBold.eot?#iefix') format('embedded-opentype'),
+        url('NeutroBold.woff') format('woff'),
+        url('NeutroBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 body {
@@ -30,8 +40,6 @@ body {
     padding: 0;
     cursor: none;
 }
-
-
 
 ::-webkit-scrollbar {
     width: 9px;
@@ -57,9 +65,9 @@ body {
 
 
 #main-text {
-    font-family: "Almarai";
+    font-family: "Neutro";
     color: white;
-    font-size: 10em;
+    font-size: 8vw;
     line-height: 1.2;
 }
 
@@ -174,64 +182,65 @@ body {
     align-items: left;
 }
 
-.menu-btn.open ~.cursor {
+/* .menu-btn.open ~.cursor {
     background: black;
-}
+} */
 
 
 .container {
     max-width: 600px;
-    margin: 50px;
-    width: 20%;
+    margin: 3vw;
     height: 50vh;
-    /* padding: 50px 0; */
+    width: 20vw;
+    left: 20vw;
     position: relative;
-    background-color: black;
-    
 }
      
 
-
 .image-container {
     padding-bottom: 200%;
-
     overflow: hidden;
     position: relative;
-    background-image: url("me.jpg");
-    background-size:  cover;
+    background-image: url("me1.jpg");
+    background-size:  100% auto;
     background-repeat: no-repeat;
-    background-position: 0% 25%;
-   
-
+    background-position: 30% 0%;
 }
 
  .text {
     color: rgb(167, 167, 167);
     margin: 0;
-    font-family: "almarai";
-    font-size: 200px;
+    font-family: "Neutro";
+    font-size: 80px;
     width: 100%;
     text-align: left;
     position: absolute;  
-    top: 175px;
-    left: -150%;
+    top: 2.5vh;
+    left: -200%;
     /* transform: translateY(10%); */
     white-space: nowrap;
- 
-
+    mix-blend-mode: difference;
 
 } 
 
 .text.text-dark {
     color: rgb(226, 196, 156);
     position: absolute;
-    top: 175px;
+    top: 2.5vh;
 }
 
 .text span {
     position: fixed;
     display: block;
     overflow: hidden;
+}
+
+.about {
+    position: absolute;
+    bottom: 60px;
+    left: 400px;
+    width: 40vw;
+    font-size: 30px;
 }
 
 @media (min-width: 768px) {
@@ -251,6 +260,10 @@ body {
         transform: scale(6);  
         mix-blend-mode: difference;
     } 
+
+    .menu-btn:hover ~ .cursor {
+        transform: scale(6);
+    }
 }
 
 @media (max-width: 767px) {
@@ -280,9 +293,25 @@ body {
 
     }
     
-    /* .text {
-        font-size: 100px;
-    } */
-    
+    .text {
+        font-size: 12vw;
+        top: -2vh;
+    }
 
+    .text.text-dark {
+        top: -2vh;
+    }
+
+    .container {
+        margin: 5vw;
+        width: 30vw;
+        height: 30vh;
+        /* padding: 50px 0; */
+        position: relative; 
+    }
+
+    .about {
+        font-size: 3vw;
+        bottom: 20vh
+    }
 }
