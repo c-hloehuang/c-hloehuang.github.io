@@ -11,12 +11,31 @@
 }
 
 @font-face {
+    font-family: 'Monument Extended Light';
+    src: url('MonumentExtended-Light.eot');
+    src: url('MonumentExtended-Light.eot') format('embedded-opentype'),
+        url('MonumentExtended-Light.woff') format('woff'),
+        url('MonumentExtended-Light.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Neutro';
     src: url('NeutroBold.eot');
     src: url('NeutroBold.eot?#iefix') format('embedded-opentype'),
         url('NeutroBold.woff') format('woff'),
         url('NeutroBold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Regular.eot');
+    src: url('TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTCommons-Regular.woff') format('woff'),
+        url('TTCommons-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -79,9 +98,10 @@ body {
 .header a {
     text-decoration: none;
     color: black;
-    font-family: 'Space Grotesk';
+    font-family: 'TT Commons';
     font-size: 3vh;
     cursor: none;
+    line-height: 50px;
 }
 
 .menu-items {
@@ -237,7 +257,7 @@ body {
     left: 350px;
     width: 40vw;
     font-size: 30px;
-    font-family: "Monument Extended";
+    font-family: "Monument Extended Light";
 }
 
 @media (min-width: 768px) {
