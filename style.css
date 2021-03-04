@@ -151,9 +151,8 @@ body {
 .menu-btn__lines, .menu-btn__lines::before, .menu-btn__lines::after {
     width: 2rem;
     height: 0.1rem;
-    background-color:rgb(226, 196, 156);
+    background-color:rgb(143, 170, 196);
     transition: all 0.2s ease-in-out;   
-
 }
 
 .menu-btn__lines::before, .menu-btn__lines::after {
@@ -197,11 +196,6 @@ body {
     align-items: left;
 }
 
-/* .menu-btn.open ~.cursor {
-    background: black;
-} */
-
-
 .container {
     max-width: 600px;
     margin: 3vw;
@@ -235,14 +229,16 @@ body {
     left: -200%;
     /* transform: translateY(10%); */
     white-space: nowrap;
-    mix-blend-mode: difference;
-
+    -webkit-text-stroke: 1.5px black;
+    -webkit-text-fill-color: transparent;
 } 
 
 .text.text-dark {
-    color: rgb(226, 196, 156);
+    /* color: rgb(226, 196, 156); */
     position: absolute;
     top: 2vh;
+    -webkit-text-stroke: transparent;
+    -webkit-text-fill-color: rgb(143, 170, 196);
 }
 
 .text span {
