@@ -1,5 +1,5 @@
 * {
-    margin: 0
+    margin: 0;
 }
 
 @font-face {
@@ -11,17 +11,6 @@
 }
 
 @font-face {
-    font-family: 'BN Paradox';
-    src: url('BNParadoxRegular.eot');
-    src: url('BNParadoxRegular.eot?#iefix') format('embedded-opentype'),
-        url('BNParadoxRegular.woff') format('woff'),
-        url('BNParadoxRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Neutro';
     src: url('NeutroBold.eot');
     src: url('NeutroBold.eot?#iefix') format('embedded-opentype'),
@@ -30,6 +19,12 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    /* position: relative; */
 }
 
 
@@ -190,13 +185,14 @@ body {
 .container {
     max-width: 600px;
     margin: 3vw;
-    height: 50vh;
-    width: 20vw;
-    left: 20vw;
+    height: 500px;
+    width: 300px;
+    left: 13vw;
+    top: 1vw;
     position: relative;
+   
 }
      
-
 .image-container {
     padding-bottom: 200%;
     overflow: hidden;
@@ -205,17 +201,17 @@ body {
     background-size:  100% auto;
     background-repeat: no-repeat;
     background-position: 30% 0%;
-}
+} 
 
  .text {
     color: rgb(167, 167, 167);
     margin: 0;
     font-family: "Neutro";
-    font-size: 80px;
+    font-size: 5vw;
     width: 100%;
     text-align: left;
     position: absolute;  
-    top: 2.5vh;
+    top: 2vh;
     left: -200%;
     /* transform: translateY(10%); */
     white-space: nowrap;
@@ -226,7 +222,7 @@ body {
 .text.text-dark {
     color: rgb(226, 196, 156);
     position: absolute;
-    top: 2.5vh;
+    top: 2vh;
 }
 
 .text span {
@@ -237,10 +233,11 @@ body {
 
 .about {
     position: absolute;
-    bottom: 60px;
-    left: 400px;
+    top: 150px;
+    left: 350px;
     width: 40vw;
     font-size: 30px;
+    font-family: "Monument Extended";
 }
 
 @media (min-width: 768px) {
@@ -273,7 +270,8 @@ body {
 
     .wrapper {
         overflow: hidden;
-        position: relative;
+        height: 100%;
+        /* position: relative; */
     }
 
     .menu-items li a, .menu-btn {
@@ -281,7 +279,7 @@ body {
     }
 
     #main-text {
-        font-size: 5em;
+        font-size: 13vw;
     }
 
     .menu-items {
@@ -290,28 +288,35 @@ body {
         align-items: center;
         text-align: center;
         padding-left:0;
-
     }
     
     .text {
-        font-size: 12vw;
-        top: -2vh;
+        font-size: 8vw;
+        top: 1vh;
+        left: -110%;
     }
 
     .text.text-dark {
-        top: -2vh;
+        top: 1vh;
     }
 
     .container {
-        margin: 5vw;
-        width: 30vw;
-        height: 30vh;
+        margin: 8vw;
+        width: 180px;
+        height: 300px;
         /* padding: 50px 0; */
         position: relative; 
+        left: 0vw;
+        top: 0;
+        /* background-color: black; */
     }
 
     .about {
-        font-size: 3vw;
-        bottom: 20vh
+        position: absolute;
+        font-size: 20px;
+        top: 100px;
+        left: 225px;
+        /* display: block; */
+
     }
 }
