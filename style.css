@@ -322,8 +322,8 @@ body {
     }
 
     .container {
-        width: 180px;
-        height: 300px;
+        width: 30vw;
+        height: 10vh;
         position: relative; 
         left: 8vw;
         top: 8vw;
@@ -331,8 +331,11 @@ body {
 
     .about {
         position: absolute;
-        font-size: 20px;
-        top: 100px;
-        left: 225px;
+        font-size: 2.5vw;
+        top: 10vh;
+        left: 37vw;
+        width: 50vw;
     }
+
+    @media (max-width: 500px) 
 }
