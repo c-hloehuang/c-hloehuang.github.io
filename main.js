@@ -13,8 +13,11 @@ menuItem.forEach(item => {
          if(menuBtn.classList.contains('open')) {
              toggle();
          }
+         item.click();
      })
 })
+
+
 
 function toggle() {
     menuBtn.classList.toggle('open');
