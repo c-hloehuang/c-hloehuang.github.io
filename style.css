@@ -217,6 +217,8 @@ body {
     background-position: 30% 0%;
 } 
 
+
+
  .text {
     color: rgb(167, 167, 167);
     margin: 0;
@@ -226,7 +228,7 @@ body {
     text-align: left;
     position: absolute;  
     top: 2vh;
-    left: -200%;
+    left: -300%;
     /* transform: translateY(10%); */
     white-space: nowrap;
     -webkit-text-stroke: 1.5px black;
@@ -250,7 +252,7 @@ body {
 .about {
     position: absolute;
     top: 150px;
-    left: 350px;
+    left: 360px;
     width: 40vw;
     font-size: 20px;
     font-family: "Monument Extended Light";
@@ -314,7 +316,7 @@ body {
     .text {
         font-size: 8vw;
         top: 1vh;
-        left: -110%;
+        left: -300%;
     }
 
     .text.text-dark {
@@ -332,7 +334,7 @@ body {
     .about {
         position: absolute;
         font-size: 2.5vw;
-        top: 10vh;
+        top: 14vw;
         left: 37vw;
         width: 50vw;
     }
